@@ -1,5 +1,5 @@
 import SynGenLoss_v2 as sgl  
-from SynGenLoss_v2.Model1 import GenDataClass, GeneratorModel, TrafoDataClass, TrafoModel
+from SynGenLoss_v2.Model1 import GenDataClass, GeneratorModel, TrafoDataClass, TrafoModel, LineDataClass, LineModel
 from SynGenLoss_v2.Model1.components.GenSaturationModel_v1 import SaturationModel
 
 # Create G1
@@ -54,3 +54,31 @@ T2 = TrafoModel(T2_data)
 T3 = TrafoModel(T3_data)
 T4 = TrafoModel(T4_data)
 T5 = TrafoModel(T5_data)
+
+L1_data = LineDataClass()
+L1_data.define_params(100, 132, 0.00719, 0.35, 0.33, 50)
+L1 = LineModel(L1_data)
+
+L2_data = LineDataClass()
+L2_data.define_params(100, 132, 0.00719, 0.35, 0.33, 7)
+L2 = LineModel(L2_data)
+
+L3_data = LineDataClass()
+L3_data.define_params(100, 132, 0.00719, 0.35, 0.33, 40)
+L3 = LineModel(L3_data)
+
+L4_data = LineDataClass()
+L4_data.define_params(100, 132, 0.00719, 0.35, 0.33, 14)
+L4 = LineModel(L4_data)
+
+L5_data = LineDataClass()
+L5_data.define_params(100, 132, 0.00719, 0.35, 0.33, 2)
+L5 = LineModel(L5_data)
+
+L6_data = LineDataClass()
+L6_data.define_params(100, 132, 0.00719, 0.35, 0.33, 3)
+L6 = LineModel(L6_data)
+
+L7_data = LineDataClass()
+L7_data.define_params(100, 132, 0.00719, 0.35, 0.33, 30)
+L7 = LineModel(L7_data)
